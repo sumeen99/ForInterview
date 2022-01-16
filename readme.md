@@ -83,9 +83,8 @@
 <details>
     <summary>스프링과 Node.js의 차이점</summary>
     <p>보통 내가 스프링을 선택한 이유에서부터 이어지는 질문
-    <br>->Spring은 thread가 여러개라 많은 요청을 동시에 처리가능하고 개발된지 오래되어서 버그나 보안문제에서도 안정성 높음.<br>노드는 한 개의 Thread로 수행하므로 효율적이고 빠른 개발이 가능하지만, 안정성 측면에서 떨어짐.</p>
+    <br>->Spring은 thread가 여러개라 많은 요청을 동시에 처리가능하고 개발된지 오래되어서 버그나 보안문제에서도 안정성 높음.<br>노드는 한 개의 Thread로 수행하므로 효율적이고 빠른 개발이 가능하지만, 안정성 측면에서 떨어짐.<br>이거 인터넷에서 찾은건데 면접에서 이건 스프링과 노드가 아니라 언어자체의 차별성을 말한게아닌가?라고 하심 + 스프링을 설명할 때 굳이 노드와 연결시켜야 할까?? 라고 하심 그렇기에 추후 수정예정</p>
 </details>
-
 <details>
     <summary>NosqlvsRDBMS</summary>
     <p>포토폴리오 관련 질문
@@ -93,20 +92,22 @@
    <br> -> NoSql들만의 공통점에 대한 질문받은 적있음.
     <br>-> 캐시...? 쪽으로 말씀해주셨던 것 같은데... 확실한 답안을 잘 모르겠다. Nosql에서 캐시라고 하면 보통 Redis인데.. 흠.. 아시는분 말씀좀..</p>
 </details>
+
 <details>
     <summary>JPA란</summary>
     <p>Java진영에서의 ORM(어플리케이션의 객체를 RDB테이블에 자동으로 영속화 해주는 것/내수준에선 쿼리가 아닌 코드로서 DB를 조작가능하게 하는 것)<br>->그렇다면 JPA를 사용하는 이유는?<br>JPA를 사용하는 이유는 객체지향 프레임워크로서 비지니스 로직이 RDBMS에 의존하는 것이 아니라, 자바 코드로 표현될 수 있어 생산성이 높아지기 때문입니다.<br>->N+1문제가 발생하는 이유와 이를 해결하는 방법은?<br>1개의 쿼리를 실행했을 때, 내부에 존재하는 컬렉션들을 조회해오면서 생기는 문제입니다. OnetoMany 어노테이션 매핑을 하지 않거나 사용할경우, Fetch Join 과 EntityGraph를 사용하는 방법이 있습니다. </p>
 </details>
+
 <details>
     <summary>DAO 와 DTO</summary>
     <p></p>
 </details>
 
+
 <details>
     <summary>JDBC를 할 때 필요한 것</summary>
     <p>데베와 연결 경험에서부터 질문받은것 -> mapper</p>
 </details>
-
 <details>
     <summary>spring에서의 트랜젝션이란</summary>
     <p>작업의 완전성,무결성을 보장해주는 것으로 작업 중 문제가 발생할 경우, 원상태로 복구해 작업의 일부만 적용되는 현상이 발생하지 않게 만들어주는 기능
@@ -115,10 +116,12 @@
     <br>-> 롤백이란?
     <br>-> 롤백은 데이터변경사항이 취소되어 데이터 이전상태로 복구되는 것이며 트랜젝션은 변경된 데이터를 영구적으로 반영하는 커밋,다시 돌아가는 롤백,일부 롤백하는 저장점의 선택지 3개를 통해 작업의 완전성을 보장해주는것</p>
 </details>
+
 <details>
     <summary>exception의 종류 2가지(자바)</summary>
     <p>Checked Exception과 Unchecked Exception가 있으며, 전자(일반예외)는 개발자가 반드시 예외처리를 직접 진행해야하는 것이고 후자(실행예외)는 개발자가 직접하지 않아도 된다. </p>
 </details>
+
 
 <details>
     <summary>Map, Hash설명</summary>
@@ -144,11 +147,11 @@
     <summary>오버로드, 오버라이딩의 차이점</summary>
     <p>오버로드는 자바의 한 클래스 내에 이미 사용하려는 이름과 같은 이름을 가진 메소드가 있더라도 매개변수의 개수 또는 타입이 다르면, 같은 이름을 사용해서 메소드를 정의할 수 있는 것. 오버라이드는 부모클래스로부터 상속받은 메소드를 자식 클래스에서 재정의 하는 것이므로 메소드의 이름, 매개변수, 리턴값이 모두 같아야함.<br>->final을 쓰면 오버로드, 오버라이드의 차이점<br>오버라이딩에서 final을 쓸경우 더이상 오버라이딩 불가. 하지만 오버로드는 메서드 이름만 똑같을 뿐 다르므로 final과 상관없다</p>
 </details>
-
 <details>
     <summary>stringbuilder과 stringbuffer의 차이점</summary>
     <p>StringBuilder와 StringBuffer는 Thread-safe 여부의 차이가 있다. StringBuilder는 Thread-safe하지 않다. 그래서 멀티스레드 환경에서 사용할 때는 StringBuffer를 사용한다.</p>
 </details>
+
 <details>
     <summary>프레임워크 VS 라이브러리</summary>
     <p>프레임워크: 어떤 프로그램을 만들기 위한 기본 틀
@@ -160,6 +163,7 @@
     <summary>java 자료구조 종류</summary>
     <p></p>
 </details>
+
 <details>
     <summary>객체지향 프로그래밍 5가지</summary>
     <p><br>클래스+인스턴스(객체)<br>클래스:집단에 속하는 속성과 행위를 변수와 메서드로 정의한것,객체:클래스에서 정의한 것을 토대로 실제 메모리에 할당된 것
@@ -168,10 +172,12 @@
     <br>상속<br>부모클래스의 속성과 기능을 그대로 이어받아 사용할수 있게 하는것
     <br>다형성<br>하나의 변수명, 함수명 등이 상황에 따라 다른 의미로 해석될 수 있는 것(ex.오버라이딩, 오버로딩)</p>
 </details>
+
 <details>
     <summary>Spring Bean의 생명주기</summary>
     <p></p>
 </details>
+
 
 **세마포어** : 멀티프로그래밍 환경에서 공유 자원에 대한 접근을 제한하는 방법
 
